@@ -1,0 +1,213 @@
+
+mysql> create database Ruhande;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use Ruhande;
+Database changed
+mysql> create table Ngoma(id int(16),f_name varchar(25),l_name varchar(25),gender varchar(1),province varchar(28),district varchar(25),sector varchar(25),cell varchar(25),telphone int(10),e_mail varchar(25));
+Query OK, 0 rows affected, 2 warnings (0.03 sec)
+
+mysql> insert into Ngoma values(1234567891234567,"Mugabo","jean","M","southern","huye","Ngoma1","ruhande",0788888888,"mugabo@gmail.com"),(9876543212345678,"Uwera","amina","f","sourthern","huye","Tumba","tumba1",0799999999,"uwera@gmail.com");
+Query OK, 2 rows affected, 2 warnings (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select * from Ngoma;
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+| id         | f_name | l_name | gender | province  | district | sector | cell    | telphone  | e_mail           |
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+| 2147483647 | Mugabo | jean   | M      | southern  | huye     | Ngoma1 | ruhande | 788888888 | mugabo@gmail.com |
+| 2147483647 | Uwera  | amina  | f      | sourthern | huye     | Tumba  | tumba1  | 799999999 | uwera@gmail.com  |
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+2 rows in set (0.00 sec)
+
+mysql> insert into Ngoma values(1234567891234517,"Mpano","james","M","southern","huye","simbi","simbi1",0788888818,"mpano@gmail.com"),(8123456789876543,"muja","ana","f","sourthern","huye","mbazi","mbazi1",0799999919,"muja@gmail.com");
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select * from Ngoma;
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+| id         | f_name | l_name | gender | province  | district | sector | cell    | telphone  | e_mail           |
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+| 2147483647 | Mugabo | jean   | M      | southern  | huye     | Ngoma1 | ruhande | 788888888 | mugabo@gmail.com |
+| 2147483647 | Uwera  | amina  | f      | sourthern | huye     | Tumba  | tumba1  | 799999999 | uwera@gmail.com  |
+| 2147483647 | Mpano  | james  | M      | southern  | huye     | simbi  | simbi1  | 788888818 | mpano@gmail.com  |
+| 2147483647 | muja   | ana    | f      | sourthern | huye     | mbazi  | mbazi1  | 799999919 | muja@gmail.com   |
++------------+--------+--------+--------+-----------+----------+--------+---------+-----------+------------------+
+4 rows in set (0.00 sec)
+
+mysql> insert into Ngoma values(1234567891234567,"Ntwari","alan","M","southern","huye","Rusatira","rusatira1",0788888878,"ntwari@gmail.com"),(9876543212345648,"kaliza","diane","f","sourthern","huye","mukura","mukura1",0799999929,"kaliza@gmail.com");
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select * from Ngoma;
++------------+--------+--------+--------+-----------+----------+----------+-----------+-----------+------------------+
+| id         | f_name | l_name | gender | province  | district | sector   | cell      | telphone  | e_mail           |
++------------+--------+--------+--------+-----------+----------+----------+-----------+-----------+------------------+
+| 2147483647 | Mugabo | jean   | M      | southern  | huye     | Ngoma1   | ruhande   | 788888888 | mugabo@gmail.com |
+| 2147483647 | Uwera  | amina  | f      | sourthern | huye     | Tumba    | tumba1    | 799999999 | uwera@gmail.com  |
+| 2147483647 | Mpano  | james  | M      | southern  | huye     | simbi    | simbi1    | 788888818 | mpano@gmail.com  |
+| 2147483647 | muja   | ana    | f      | sourthern | huye     | mbazi    | mbazi1    | 799999919 | muja@gmail.com   |
+| 2147483647 | Ntwari | alan   | M      | southern  | huye     | Rusatira | rusatira1 | 788888878 | ntwari@gmail.com |
+| 2147483647 | kaliza | diane  | f      | sourthern | huye     | mukura   | mukura1   | 799999929 | kaliza@gmail.com |
++------------+--------+--------+--------+-----------+----------+----------+-----------+-----------+------------------+
+6 rows in set (0.00 sec)
+
+mysql> insert into Ngoma values(1234567391234517,"dukunde","aline","M","southern","huye","gasave","gasave1",0788488818,"dukunde@gmail.com"),(8123456789176543,"kami","emma","f","sourthern","huye","kinazi","kinazi1",0799991919,"kami@gmail.com");
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+-----------+----------+----------+-----------+-----------+-------------------+
+| id         | f_name  | l_name | gender | province  | district | sector   | cell      | telphone  | e_mail            |
++------------+---------+--------+--------+-----------+----------+----------+-----------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | M      | southern  | huye     | Ngoma1   | ruhande   | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | f      | sourthern | huye     | Tumba    | tumba1    | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | M      | southern  | huye     | simbi    | simbi1    | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | f      | sourthern | huye     | mbazi    | mbazi1    | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | M      | southern  | huye     | Rusatira | rusatira1 | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | f      | sourthern | huye     | mukura   | mukura1   | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | M      | southern  | huye     | gasave   | gasave1   | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | f      | sourthern | huye     | kinazi   | kinazi1   | 799991919 | kami@gmail.com    |
++------------+---------+--------+--------+-----------+----------+----------+-----------+-----------+-------------------+
+8 rows in set (0.00 sec)
+
+mysql> insert into Ngoma values(1234567891212567,"kagabo","peter","M","southern","huye","busasamana","busasamana1",0712888878,"kagabo@gmail.com"),(9126543212345648,"bwiza","dinah","f","sourthern","huye","gisagara","gisagara1",0792999929,"bwiza@gmail.com");
+Query OK, 2 rows affected, 2 warnings (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+-----------+----------+------------+-------------+-----------+-------------------+
+| id         | f_name  | l_name | gender | province  | district | sector     | cell        | telphone  | e_mail            |
++------------+---------+--------+--------+-----------+----------+------------+-------------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | M      | southern  | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | f      | sourthern | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | M      | southern  | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | f      | sourthern | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | M      | southern  | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | f      | sourthern | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | M      | southern  | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | f      | sourthern | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    |
+| 2147483647 | kagabo  | peter  | M      | southern  | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  |
+| 2147483647 | bwiza   | dinah  | f      | sourthern | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   |
++------------+---------+--------+--------+-----------+----------+------------+-------------+-----------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql> update Ngoma set province="south" where district='huye';
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| id         | f_name  | l_name | gender | province | district | sector     | cell        | telphone  | e_mail            |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | M      | south    | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | f      | south    | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | M      | south    | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | f      | south    | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | M      | south    | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | f      | south    | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | M      | south    | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | f      | south    | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    |
+| 2147483647 | kagabo  | peter  | M      | south    | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  |
+| 2147483647 | bwiza   | dinah  | f      | south    | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql> alter table Ngoma add address varchar(25);
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+---------+
+| id         | f_name  | l_name | gender | province | district | sector     | cell        | telphone  | e_mail            | address |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+---------+
+| 2147483647 | Mugabo  | jean   | M      | south    | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  | NULL    |
+| 2147483647 | Uwera   | amina  | f      | south    | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   | NULL    |
+| 2147483647 | Mpano   | james  | M      | south    | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   | NULL    |
+| 2147483647 | muja    | ana    | f      | south    | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    | NULL    |
+| 2147483647 | Ntwari  | alan   | M      | south    | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  | NULL    |
+| 2147483647 | kaliza  | diane  | f      | south    | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  | NULL    |
+| 2147483647 | dukunde | aline  | M      | south    | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com | NULL    |
+| 2147483647 | kami    | emma   | f      | south    | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    | NULL    |
+| 2147483647 | kagabo  | peter  | M      | south    | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  | NULL    |
+| 2147483647 | bwiza   | dinah  | f      | south    | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   | NULL    |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> update Ngoma set address="huye_Rwanda" where province='south';
+Query OK, 10 rows affected (0.00 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+-------------+
+| id         | f_name  | l_name | gender | province | district | sector     | cell        | telphone  | e_mail            | address     |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+-------------+
+| 2147483647 | Mugabo  | jean   | M      | south    | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  | huye_Rwanda |
+| 2147483647 | Uwera   | amina  | f      | south    | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   | huye_Rwanda |
+| 2147483647 | Mpano   | james  | M      | south    | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   | huye_Rwanda |
+| 2147483647 | muja    | ana    | f      | south    | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    | huye_Rwanda |
+| 2147483647 | Ntwari  | alan   | M      | south    | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  | huye_Rwanda |
+| 2147483647 | kaliza  | diane  | f      | south    | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  | huye_Rwanda |
+| 2147483647 | dukunde | aline  | M      | south    | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com | huye_Rwanda |
+| 2147483647 | kami    | emma   | f      | south    | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    | huye_Rwanda |
+| 2147483647 | kagabo  | peter  | M      | south    | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  | huye_Rwanda |
+| 2147483647 | bwiza   | dinah  | f      | south    | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   | huye_Rwanda |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> alter table Ngoma drop address;
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select * from Ngoma;
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| id         | f_name  | l_name | gender | province | district | sector     | cell        | telphone  | e_mail            |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | M      | south    | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | f      | south    | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | M      | south    | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | f      | south    | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | M      | south    | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | f      | south    | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | M      | south    | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | f      | south    | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    |
+| 2147483647 | kagabo  | peter  | M      | south    | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  |
+| 2147483647 | bwiza   | dinah  | f      | south    | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql> select id,f_name,l_name,sector,telphone,e_mail from Ngoma;
++------------+---------+--------+------------+-----------+-------------------+
+| id         | f_name  | l_name | sector     | telphone  | e_mail            |
++------------+---------+--------+------------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | Ngoma1     | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | Tumba      | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | simbi      | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | mbazi      | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | Rusatira   | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | mukura     | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | gasave     | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | kinazi     | 799991919 | kami@gmail.com    |
+| 2147483647 | kagabo  | peter  | busasamana | 712888878 | kagabo@gmail.com  |
+| 2147483647 | bwiza   | dinah  | gisagara   | 792999929 | bwiza@gmail.com   |
++------------+---------+--------+------------+-----------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql> select * from Ngoma where gender="f" or district="huye";
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| id         | f_name  | l_name | gender | province | district | sector     | cell        | telphone  | e_mail            |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+| 2147483647 | Mugabo  | jean   | M      | south    | huye     | Ngoma1     | ruhande     | 788888888 | mugabo@gmail.com  |
+| 2147483647 | Uwera   | amina  | f      | south    | huye     | Tumba      | tumba1      | 799999999 | uwera@gmail.com   |
+| 2147483647 | Mpano   | james  | M      | south    | huye     | simbi      | simbi1      | 788888818 | mpano@gmail.com   |
+| 2147483647 | muja    | ana    | f      | south    | huye     | mbazi      | mbazi1      | 799999919 | muja@gmail.com    |
+| 2147483647 | Ntwari  | alan   | M      | south    | huye     | Rusatira   | rusatira1   | 788888878 | ntwari@gmail.com  |
+| 2147483647 | kaliza  | diane  | f      | south    | huye     | mukura     | mukura1     | 799999929 | kaliza@gmail.com  |
+| 2147483647 | dukunde | aline  | M      | south    | huye     | gasave     | gasave1     | 788488818 | dukunde@gmail.com |
+| 2147483647 | kami    | emma   | f      | south    | huye     | kinazi     | kinazi1     | 799991919 | kami@gmail.com    |
+| 2147483647 | kagabo  | peter  | M      | south    | huye     | busasamana | busasamana1 | 712888878 | kagabo@gmail.com  |
+| 2147483647 | bwiza   | dinah  | f      | south    | huye     | gisagara   | gisagara1   | 792999929 | bwiza@gmail.com   |
++------------+---------+--------+--------+----------+----------+------------+-------------+-----------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql>
